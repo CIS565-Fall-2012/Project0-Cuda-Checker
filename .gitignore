@@ -10,3 +10,9 @@
 *.lai
 *.la
 *.a
+
+# Visual Studio Stuff
+*.suo
+
+# Mac Stuff
+*.DS_Store
