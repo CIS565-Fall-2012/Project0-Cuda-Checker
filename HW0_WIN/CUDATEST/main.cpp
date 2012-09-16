@@ -12,7 +12,7 @@
 
 int main(int argc, char* argv[]){
   //Change this line to use your name!
-  yourName = "Karl Li";
+  yourName = "David Isele";
 
   init(argc, argv);
   initVAO();
@@ -160,10 +160,10 @@ void initTextures(){
 void initVAO(void){
     GLfloat vertices[] =
     { 
-        -1.0f, -1.0f, 
-         1.0f, -1.0f, 
-         1.0f,  1.0f, 
-        -1.0f,  1.0f, 
+        -0.5f, -0.5f, 
+         0.5f, -0.5f, 
+         0.5f,  0.5f, 
+        -0.5f,  0.5f, 
     };
 
     GLfloat texcoords[] = 
