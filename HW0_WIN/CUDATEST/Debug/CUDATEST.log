@@ -1,0 +1,50 @@
+﻿Build started 9/15/2012 10:05:03 PM.
+     1>Project "C:\Users\isele\Documents\GitHub\Homework0\HW0_WIN\CUDATEST\CUDATEST.vcxproj" on node 2 (build target(s)).
+     1>InitializeBuildStatus:
+         Creating "Debug\CUDATEST.unsuccessfulbuild" because "AlwaysCreate" was specified.
+       AddCudaCompileDeps:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\cl.exe /E /nologo /showIncludes /TP /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include" /I"C:/ProgramData/NVIDIA Corporation/NVIDIA GPU Computing SDK 4.0/C/common/inc" /I../shared/glew/includes /I../shared/freeglut/includes /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin" /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include" /I. /FIcuda_runtime.h /c C:\Users\isele\Documents\GitHub\Homework0\HW0_WIN\CUDATEST\kernel.cu 
+       AddCudaCompilePropsDeps:
+       Skipping target "AddCudaCompilePropsDeps" because all output files are up-to-date with respect to the input files.
+       CudaBuild:
+         Compiling CUDA source file kernel.cu...
+         cmd.exe /C "C:\Users\isele\AppData\Local\Temp\a26c94c5e64a4e7891c3d4325049bed1.cmd"
+         "C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include" -I"C:/ProgramData/NVIDIA Corporation/NVIDIA GPU Computing SDK 4.0/C/common/inc" -I"../shared/glew/includes" -I"../shared/freeglut/includes" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"  -G0  --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -D_NEXUS_DEBUG -g    -Xcompiler "/EHsc /nologo /Od /Zi  /MDd " -o "C:\Users\isele\Documents\GitHub\Homework0\HW0_WIN\CUDATEST\Win32/Debug/kernel.cu.obj" "C:\Users\isele\Documents\GitHub\Homework0\HW0_WIN\CUDATEST\kernel.cu"
+         
+         C:\Users\isele\Documents\GitHub\Homework0\HW0_WIN\CUDATEST>"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\bin\nvcc.exe" -gencode=arch=compute_10,code=\"sm_10,compute_10\" --use-local-env --cl-version 2010 -ccbin "C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include" -I"C:/ProgramData/NVIDIA Corporation/NVIDIA GPU Computing SDK 4.0/C/common/inc" -I"../shared/glew/includes" -I"../shared/freeglut/includes" -I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include"  -G0  --keep-dir "Debug" -maxrregcount=0  --machine 32 --compile  -D_NEXUS_DEBUG -g    -Xcompiler "/EHsc /nologo /Od /Zi  /MDd " -o "C:\Users\isele\Documents\GitHub\Homework0\HW0_WIN\CUDATEST\Win32/Debug/kernel.cu.obj" "C:\Users\isele\Documents\GitHub\Homework0\HW0_WIN\CUDATEST\kernel.cu" 
+         kernel.cu
+         tmpxft_00001098_00000000-0_kernel.cudafe1.gpu
+         tmpxft_00001098_00000000-5_kernel.cudafe2.gpu
+         kernel.cu
+         tmpxft_00001098_00000000-0_kernel.cudafe1.cpp
+         tmpxft_00001098_00000000-11_kernel.ii
+         Deleting file "tmpxft_00001098_00000000-6_kernel.cpp3.o".
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include" /I"C:\ProgramData\NVIDIA Corporation\NVIDIA GPU Computing SDK 4.0\C\common\inc" /I../shared/glew/include /I../shared/freeglut/include /I"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\include" /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /D _UNICODE /D UNICODE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt glslUtility.cpp main.cpp
+         main.cpp
+         Note: including lib: glut32.lib
+         
+         glslUtility.cpp
+         Generating Code...
+       ManifestResourceCompile:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\CUDATEST.exe.embed.manifest.res" Debug\CUDATEST_manifest.rc 
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\isele\Documents\GitHub\Homework0\HW0_WIN\Debug\CUDATEST.exe" /INCREMENTAL /NOLOGO /LIBPATH:../shared/glew/lib /LIBPATH:../shared/freeglut/lib /LIBPATH:"C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v4.0\lib\Win32" cudart.lib glew32.lib glu32.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\CUDATEST.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\Users\isele\Documents\GitHub\Homework0\HW0_WIN\Debug\CUDATEST.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /ENTRY:"mainCRTStartup" /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\isele\Documents\GitHub\Homework0\HW0_WIN\Debug\CUDATEST.lib" /MACHINE:X86 C:\Users\isele\Documents\GitHub\Homework0\HW0_WIN\CUDATEST\Win32/Debug/kernel.cu.obj
+         Debug\CUDATEST.exe.embed.manifest.res
+         Debug\glslUtility.obj
+         Debug\main.obj
+         LINK : C:\Users\isele\Documents\GitHub\Homework0\HW0_WIN\Debug\CUDATEST.exe not found or not built by the last incremental link; performing full link
+       Manifest:
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\CUDATEST.exe.embed.manifest" /manifest Debug\CUDATEST.exe.intermediate.manifest
+         All outputs are up-to-date.
+       LinkEmbedManifest:
+         All outputs are up-to-date.
+         CUDATEST.vcxproj -> C:\Users\isele\Documents\GitHub\Homework0\HW0_WIN\Debug\CUDATEST.exe
+       FinalizeBuildStatus:
+         Deleting file "Debug\CUDATEST.unsuccessfulbuild".
+         Touching "Debug\CUDATEST.lastbuildstate".
+     1>Done Building Project "C:\Users\isele\Documents\GitHub\Homework0\HW0_WIN\CUDATEST\CUDATEST.vcxproj" (build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:13.04
