@@ -12,7 +12,7 @@
 
 int main(int argc, char* argv[]){
   //Change this line to use your name!
-  yourName = "Karl Li";
+  yourName = "William Boone";
 
   init(argc, argv);
   initVAO();
@@ -20,7 +20,8 @@ int main(int argc, char* argv[]){
   initCuda();
 
   GLuint passthroughProgram;
-  passthroughProgram = initShader("shaders/passthroughVS.glsl", "shaders/passthroughFS.glsl");
+  passthroughProgram = initShader("C:/user/liamboone-Homework0-05eb76c/liamboone-Homework0-05eb76c/HW0_WIN/CUDATEST/shaders/passthroughVS.glsl", 
+	  "C:/user/liamboone-Homework0-05eb76c/liamboone-Homework0-05eb76c/HW0_WIN/CUDATEST/shaders/passthroughFS.glsl");
 
   glUseProgram(passthroughProgram);
   glActiveTexture(GL_TEXTURE0);
